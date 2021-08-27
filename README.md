@@ -12,4 +12,4 @@ Formal verification of low-level software has become a trend in the formal metho
 
 ### Details
 
-Please check document etai2011 to find out more about this research.
+Please check document `etai2011.pdf` to find out more about this research.
