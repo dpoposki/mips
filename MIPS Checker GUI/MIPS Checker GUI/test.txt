@@ -1,0 +1,29 @@
+.text
+main:
+la $a0,input
+li $v0,4
+syscall
+li $v0,5
+syscall
+move $t0,$v0
+li $t2,2
+blt $t0,$t2,prime
+divison:
+	beq $t0,$t2,prime
+	div $t0,$t2
+	mfhi $t1
+	beq $t1,$t1,notprime
+	add $t1,$t1,1
+	b divison
+prime:
+	la $a0,nprime
+	li $v0,4
+	syscall
+	b end
+notprime:
+	la $a0,notprimenum
+	li $v0,4
+	syscall
+end:
+	li $v0,10
+	syscall

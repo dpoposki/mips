@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MIPS Checker">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\Administrator\My Documents\My Pictures\ZA 2010\MIPS Checker\MIPS Checker.sln">
+</Property><Property Name="User Options File" Value="C:\Documents and Settings\Administrator\My Documents\My Pictures\ZA 2010\MIPS Checker\MIPS Checker.suo">
+</Property><Property Name="Date" Value="вторник, 17 мај 2011">
+</Property><Property Name="Time" Value="14:54">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MIPS Checker.sln" Description="File successfully backed up as C:\Documents and Settings\Administrator\My Documents\My Pictures\ZA 2010\MIPS Checker\MIPS Checker.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="MIPS Checker.suo" Description="File successfully backed up as C:\Documents and Settings\Administrator\My Documents\My Pictures\ZA 2010\MIPS Checker\MIPS Checker.suo.old">
+</Event><Event ErrorLevel="0" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Converting project file 'C:\Documents and Settings\Administrator\My Documents\My Pictures\ZA 2010\MIPS Checker\GUICPP\GUICPP.vcproj'.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Done converting to new project file 'C:\Documents and Settings\Administrator\My Documents\My Pictures\ZA 2010\MIPS Checker\GUICPP\GUICPP.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="GUICPP" Source="GUICPP\GUICPP.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MIPS Checker.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MIPS Checker.sln" Description="Converted">
+</Event></UpgradeLog>

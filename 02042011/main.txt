@@ -1,0 +1,103 @@
+/* 
+ * File:   main.cpp
+ * Author: LG
+ *
+ * Created on 16 de marzo de 2011, 14:42
+ */
+
+#include <cstdlib>
+#include <stdio.h>
+#include <string.h>
+#define MAXLINE 250
+
+using namespace std;
+
+
+void EliminateComments(char buf[]);
+int RecognizeInst(char instr[]);
+int Prefix(char buf[],char pre[],int len);
+void PrintFile(struct node *n);
+
+/*
+ * 
+ */
+
+struct node {
+	int instruction;
+	char line[MAXLINE];
+	struct node *next;
+	struct node *prev;
+};
+
+void EliminateComments(char buf[])
+{
+    int i;
+    for (i=0; (buf[i]!=0); i++)
+    {
+		if (buf[i]=='\n') buf[i]='\0';
+    }
+    return;
+}
+
+int Prefix(char buf[],char pre[],int len)
+{
+    int i;
+    for(i=0; (i<len)&&(buf[i]==pre[i]); i++);
+    return (i==len);
+}
+
+void ReadFile(FILE *fp, struct node *currentNode) {
+	char Line[MAXLINE];
+	struct node *son=(struct node *)malloc(sizeof(struct node));
+	son->prev=currentNode;
+    if(fgets(Line,MAXLINE,fp)!=NULL) {
+        EliminateComments(Line);
+		strcpy(currentNode->line,Line);
+		currentNode->instruction=RecognizeInst(Line);
+		currentNode->next=son;
+		ReadFile(fp,son);
+    }
+	else {
+		currentNode->next=NULL;
+	}
+}
+
+void PrintFile(struct node *currentNode) {
+	if(currentNode->next!=NULL) {
+		printf("%s",currentNode->line);
+		if(currentNode->prev)
+			printf("| %s",currentNode->prev->line);
+		printf("\n");
+		PrintFile(currentNode->next);
+	}
+}
+
+int main() {
+	struct node *root=(struct node *)malloc(sizeof(struct node));
+	root->prev=NULL;
+	FILE *fp;
+    fp=fopen("test.txt", "r");
+    if (!fp) printf("File Not Found!\n");
+	else ReadFile(fp,root);
+	fclose(fp);
+	PrintFile(root);
+	system("pause");
+    return 0;
+}
+
+int RecognizeInst(char instr[])
+{
+    char *pattern;
+    pattern=strstr(instr,":");
+    if (pattern)                        return 1;
+    if (Prefix(instr,".",1))            return 0;
+    else if (Prefix(instr,"syscall",7)) return 7;
+    else if (Prefix(instr,"l",1))       return 4;
+    else if (Prefix(instr,"mo",2)||Prefix(instr,"a",1)||Prefix(instr,"s",1))
+                                        return 2;
+    else if (Prefix(instr,"b",1))       return 3;
+    else if (Prefix(instr,"mu",2))      return 5;
+    else if (Prefix(instr,"di",2))      return 6;
+    else if (Prefix(instr,"mf",2))      return 8;
+    return 0;
+}

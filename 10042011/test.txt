@@ -1,0 +1,14 @@
+.text
+main:
+li $v0,5	# Input the number
+syscall
+move $t0,$v0	# Move the value
+label:
+bgt $t0,$t1, end
+move $a0,$t0
+li $v0,1
+syscall
+b label
+end:
+li $v0,10
+syscall
